@@ -1,0 +1,233 @@
+section{
+    background-color: grey;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+section::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+.stepinner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    height: 100%;
+    width: 100%;
+    text-shadow: rgb(29, 13, 6) 1px 0 10px;
+}
+.play{
+    z-index: 99;
+    background-color: white;
+    position: fixed;
+    border-radius: 100%;
+    right: 20px;
+    top: 50%;
+    max-width: 50px;
+    max-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+.icon{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    cursor: pointer;
+}
+.step1{
+    background-image: url(../images/pont.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: all 3s;
+}
+.step2{
+    background-image: url(../images/dormeur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: all 3s;
+}
+.step3{
+    background-image: url(../images/colchique.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: all 3s;
+}
+.step4{
+    background-image: url(../images/bakamitai.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: all 3s;
+}
+
+
+.step5{
+    background-image: url(../images/montmartre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: all 3s;
+}
+.titre-auteur{
+    font-family: 'Dancing Script', cursive;
+}
+.auteur{
+    position: relative;
+    width: 300px;
+    display: flex;
+    justify-content: end;
+    font-size: 22px;
+    right: 290px;
+    opacity: 0;
+    transition: all 9s;
+}
+#autor1{
+    right: -1600px;
+}
+#autor2{
+    right: -1600px;
+}
+#autor3{
+    right: -1600px;
+}
+#autor4{
+    right: -1600px;
+}
+#autor4{
+    right: -1600px;
+}
+h2{
+    font-size: 26px;
+    margin-bottom: 40px;
+    opacity: 0;
+    transition: all 4s;
+}
+#title1{
+    position: relative;
+    top: -900px;
+    transition: all 4s;
+}
+#title2{
+    position: relative;
+    top: -900px;
+    transition: all 4s;
+}
+#title3{
+    position: relative;
+    top: -900px;
+    transition: all 4s;
+}
+#title4{
+    position: relative;
+    top: -900px;
+    transition: all 4s;
+}
+#title5{
+    position: relative;
+    top: -900px;
+    transition: all 4s;
+}
+p{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#poeme1{
+    opacity: 0;
+    bottom: -3000px;
+    transition: all 6s;
+}
+#poeme2{
+    bottom: -3000px;
+    transition: all 6s;
+    opacity: 0;
+}
+#poeme3{
+    bottom: -3000px;
+    transition: all 6s;
+    opacity: 0;
+}
+#poeme4{
+    bottom: -3000px;
+    transition: all 6s;
+    opacity: 0;
+}
+#poeme5{
+    bottom: -3000px;
+    opacity: 0;
+    transition: all 6s;
+}
+.poeme{
+    position: relative;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    opacity: 1;
+    font-family: 'Kalam', cursive;
+}
+.poeme p{
+    padding-right: 30px;
+}
+
+.step2, .step3, .step4, .step5{
+    display: none;
+}
+@media (max-width: 882px){
+    .step4{
+        height: 800px;
+        width: 100%;
+        background-size: cover;
+    }
+    .poeme{
+        max-height: 100%;
+    }
+    .step5{
+        height: 1500px;
+        width: 100%;
+        background-size: cover;
+    }
+}
+@media (max-width: 582px){
+    section{
+        min-height: 800px;
+    }
+    .step4{
+        height: 1000px;
+        width: 100%;
+        background-size: cover;
+    }
+    .poeme{
+        max-height: 100%;
+    }
+    .step5{
+        height: 1500px;
+        width: 100%;
+        background-size: cover;
+    }
+}
